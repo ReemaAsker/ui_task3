@@ -107,8 +107,9 @@ class MyApp extends StatelessWidget {
                               height: 50,
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(20.0),
-                                border:
-                                    Border.all(color: Colors.white, width: 3),
+                                border: Border.all(
+                                    color: Color.fromRGBO(242, 242, 242, 1),
+                                    width: 1),
                                 image: const DecorationImage(
                                   image: NetworkImage(
                                       'https://img.freepik.com/free-photo/road-mountains-with-cloudy-sky_1340-23022.jpg'),
@@ -122,8 +123,10 @@ class MyApp extends StatelessWidget {
                               height: 50,
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(20.0),
-                                border:
-                                    Border.all(color: Colors.white, width: 3),
+                                border: Border.all(
+                                    color:
+                                        const Color.fromRGBO(242, 242, 242, 1),
+                                    width: 2),
                                 image: const DecorationImage(
                                   image: NetworkImage(
                                       'https://image.jimcdn.com/app/cms/image/transf/dimension=1040x10000:format=jpg/path/s2217cd0bb1220415/image/i921c8cdd05b2108e/version/1683748912/antique-photos-and-camera.jpg'),
@@ -137,8 +140,10 @@ class MyApp extends StatelessWidget {
                               height: 50,
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(20.0),
-                                border:
-                                    Border.all(color: Colors.white, width: 3),
+                                border: Border.all(
+                                    color:
+                                        const Color.fromRGBO(242, 242, 242, 1),
+                                    width: 2),
                                 image: const DecorationImage(
                                   image: NetworkImage(
                                       'https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg'),

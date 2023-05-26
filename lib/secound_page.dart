@@ -186,7 +186,7 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
                 SizedBox(
-                  height: 80.0,
+                  height: 80.0, //80
                 ),
                 Container(
                   padding:
