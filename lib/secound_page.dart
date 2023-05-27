@@ -32,13 +32,29 @@ class MyApp extends StatelessWidget {
                         ),
                         child: const Icon(Icons.arrow_back_ios_new),
                       ),
-                      Container(
-                        padding: const EdgeInsets.all(12.0),
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(15.0),
-                          color: Colors.grey[200],
-                        ),
-                        child: const Icon(Icons.tune),
+                      Stack(
+                        alignment: Alignment.bottomLeft,
+                        children: [
+                          Container(
+                            margin: EdgeInsets.only(top: 8),
+                            padding: const EdgeInsets.all(12.0),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(15),
+                              color: Colors.grey[200],
+                            ),
+                            child: const Icon(Icons.tune),
+                          ),
+                          CircleAvatar(
+                            radius: 12.0,
+                            backgroundColor:
+                                const Color.fromRGBO(2, 23, 104, 1),
+                            child: const Text(
+                              '150',
+                              style:
+                                  TextStyle(color: Colors.white, fontSize: 8),
+                            ),
+                          ),
+                        ],
                       ),
                     ],
                   ),
@@ -61,26 +77,29 @@ class MyApp extends StatelessWidget {
                       horizontal: 8.0, vertical: 8.0),
                   child: Center(
                     child: Stack(
-                      alignment: Alignment.topRight,
+                      alignment: Alignment.topCenter,
                       children: [
                         Container(
-                          width: 400,
-                          height: 370,
+                          padding: const EdgeInsets.only(top: 340),
+                          margin:
+                              const EdgeInsets.only(left: 24.0, right: 24.0),
                           decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(75.0),
-                              color: Color.fromRGBO(242, 242, 242, 1)),
+                            borderRadius: BorderRadius.circular(65.0),
+                            color: Color.fromRGBO(230, 230, 237, 0.5),
+                          ),
                         ),
                         Container(
-                          width: 410,
-                          height: 350,
+                          padding: const EdgeInsets.only(top: 320),
+                          margin:
+                              const EdgeInsets.only(left: 10.0, right: 10.0),
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(65.0),
                             color: Color.fromRGBO(230, 230, 237, 1),
                           ),
                         ),
                         Container(
-                          width: 410,
-                          height: 330,
+                          padding: EdgeInsets.symmetric(
+                              horizontal: 20, vertical: 35),
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(55.0),
                             color: const Color.fromRGBO(2, 23, 104, 1),
@@ -104,7 +123,7 @@ class MyApp extends StatelessWidget {
                                           color: Colors.white),
                                     ),
                                     Container(
-                                      padding: const EdgeInsets.all(12.0),
+                                      padding: const EdgeInsets.all(12.0), //12
                                       decoration: BoxDecoration(
                                           borderRadius:
                                               BorderRadius.circular(15.0),
@@ -131,7 +150,8 @@ class MyApp extends StatelessWidget {
                                 ),
                               ),
                               Padding(
-                                padding: const EdgeInsets.only(left: 20.0),
+                                padding: const EdgeInsets.only(
+                                    left: 20.0, top: 12, bottom: 12),
                                 child: Text(
                                   "Subject and studio photogrphy \n of goods for an online store.Photo\nprocessing",
                                   style: TextStyle(
@@ -191,7 +211,6 @@ class MyApp extends StatelessWidget {
                 Container(
                   padding:
                       EdgeInsets.symmetric(horizontal: 40.0, vertical: 24.0),
-                  margin: EdgeInsets.symmetric(horizontal: 8.0),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
